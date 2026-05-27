@@ -39,14 +39,3 @@ The notebook systematically calculates and implements **7 distinct statistical p
 
 * **The Regional Flight Skew:** The significant margin separating the Mode (`337.0` miles), Median (`844.0` miles), and Mean (`1,190.32` miles) reveals a classic **Right-Skewed Distribution** ($Mode < Median < Mean$). 
 * **Operational Implication:** The airline's daily schedule is heavily anchored by ultra-high-frequency, short-distance regional commutes (hence the low mode). However, a minor, spread-out cluster of long-haul transoceanic flights pulls the mathematical average significantly upward.
-
----
-
-## ⚙️ Local Installation & Execution Steps
-
-This analysis was executed intentionally in a clean, local Python environment to optimize rendering and processing speeds without cloud-based dependency overhead.
-
-1. **Clone the Repository Workspace:**
-   ```bash
-   git clone [https://github.com/your-username/airline-descriptive-stats.git](https://github.com/your-username/airline-descriptive-stats.git)
-   cd airline-descriptive-stats
