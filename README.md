@@ -1,46 +1,52 @@
-# Airline Operational Analytics: Statistical Modeling & Probability Distributions
+# Airline Passenger Satisfaction - Descriptive Statistics & Distribution Analysis
 
-An end-to-end mathematical data analysis project conducted in a local Python development environment to model airport operational metrics. By assessing baseline descriptive characteristics and fitting continuous theoretical curves (Normal Distribution), this project transforms empirical flight logs into active probability models to determine risk thresholds and structural flight profiles.
+An end-to-end descriptive analytics and statistical modeling project implemented inside a local Python development environment. This project focuses on auditing, parsing, and building a mathematical baseline for airline operational metrics by extracting core central tendencies, variation parameters, and structural distributions from real-world customer flight logs.
 
-## 🚀 Repository Assets
-* **Core Workspace:** `Statistics and Probability (1).ipynb`
-* **Technical Framework:** Python 3, Pandas, NumPy, Matplotlib, SciPy (`scipy.stats`)
-* **Mathematical Applications:** Continuous Probability Density Functions (PDF), Parameter Estimation, Z-Score Intercepts, Right-Skewness Analysis
-
----
-
-## 📊 Business Framework & Objective
-For logistical hubs and airline carriers, calculating the spatial behavior of flights is foundational to resource allocation, fuel planning, and fleet routing. 
-
-This project explores an enterprise database consisting of **24 performance columns** (including traveler categories, seating layout satisfaction, and downstream delay minutes). The core focus lies in extracting **Flight Distance** metrics to develop a rigorous mathematical baseline that calculates standard operational probabilities.
+## 🚀 Key Project Assets
+* **Core Workspace:** `Statistics and Probability.ipynb`
+* **Technical Stack:** Python 3, Pandas, NumPy, Matplotlib
+* **Core Column Analyzed:** `Flight Distance`
 
 ---
 
-## 🛠️ Workspace Pipeline & Math Implementation
+## 📊 Business Context & Analytics Objective
+For airline operations, analyzing passenger flight behavior is critical to predicting cabin wear, service resource allocation, and frequent flyer profiling. 
 
-### 1. Parametric Data Auditing
-Using `pandas`, raw consumer profiles are imported programmatically and checked. Central locations and dispersion limits are calculated directly from the core vector array:
-* **Mathematical Mean ($\mu$):** `1190.32` miles, pinpointing the global balancing point of flight records.
-* **Statistical Median:** `844.0` miles, capturing the exact 50th percentile mark.
-* **Sample Variance ($\sigma^2$):** `994,911.44` (indicating high dispersion across regional and long-haul vectors).
-* **Standard Deviation ($\sigma$):** `997.45` miles, tracking the average deviation around our operating mean.
-* **Standard Error (SEM):** `2.77`, proving high stability and low variance in our global population mean.
-
-### 2. Theoretical Continuous Distribution Fitting
-To determine if operations follow a standard bell shape, the system maps out an empirical frequency density histogram overlaid with a custom continuous **Normal Probability Density Function (PDF)** using `scipy.stats.norm.pdf()`:
-
-$$\mu = 1190.32, \quad \sigma = 997.45$$
-
-$$f(x) = \frac{1}{997.45\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - 1190.32}{997.45}\right)^2}$$
-
-### 3. Z-Score Framework
-By creating smooth continuous lines over real-world operational distributions, the workspace establishes a platform for calculating left-tail, right-tail, and step-wise interval probabilities:
-* **Z-Score Formula:** $Z = \frac{X - \mu}{\sigma}$
-* **Probability Metrics:** Solves cumulative area spaces under the fitted curve using the theoretical parameters.
+This project processes an industry database across a numerical vector space (**Flight Distance**) to isolate exact statistical behaviors. By establishing clear mathematical parameters, the business can accurately assess structural shifts in travel lengths and understand the true shape of day-to-day flight operations.
 
 ---
 
-## 💡 Core Insights & Skewness Findings
+## 🛠️ Implemented Technical & Statistical Workflows
 
-* **The Right-Skewed Operational Profile:** The immense gap between the calculated Median (`844.0` miles) and Mean (`1190.32` miles) indicates a distinct right-skewed distribution. The carrier's daily flights are heavily packed with high-frequency, short-distance regional tracks, while an isolated tail of high-mileage intercontinental flights pulls the mathematical average higher.
-* **Friction Overlays:** By mapping continuous variables against discrete consumer response metrics, the pipeline tracks how physical properties (like long-range distances and late terminal delays) drive down base sentiment.
+The notebook systematically calculates and implements **7 distinct statistical properties** to define the dataset's baseline profile:
+
+### I. Central Tendencies
+* **1. Mean ($\mu$):** Evaluated at **1,190.32 miles**. This marks the mathematical balance point of all recorded passenger flight paths.
+* **2. Median:** Evaluated at **844.0 miles**. This captures the absolute 50th percentile mark, splitting the dataset directly in half.
+* **3. Mode:** Evaluated at **337 miles**. This identifies the single most frequently occurring flight distance within the carrier's logs.
+
+### II. Dispersion & Variance Analytics
+* **4. Variance ($\sigma^2$):** Calculated as **994,911.44**. This measures the absolute internal spread and squared deviations of individual flights away from our operational mean.
+* **5. Standard Deviation ($\sigma$):** Calculated as **997.45 miles**. This benchmarks the standard volatility and dispersion, indicating how far typical flights stray from the center.
+* **6. Standard Error of the Mean (SEM):** Evaluated at **2.77**. This quantifies sample mean precision, mathematically proving that our calculated sample average is exceptionally stable and true to the wider population.
+
+### III. Continuous Curve Fitting
+* **7. Normal Distribution Modeling:** Custom-built an empirical data frequency histogram and overlaid it with a calculated **Continuous Normal Distribution Curve** using `matplotlib`. This provides immediate visual proof of how closely real-world commercial logs align with a theoretical ideal bell curve.
+
+---
+
+## 💡 Key Analytical Insights & Skewness Findings
+
+* **The Regional Flight Skew:** The significant margin separating the Mode (`337.0` miles), Median (`844.0` miles), and Mean (`1,190.32` miles) reveals a classic **Right-Skewed Distribution** ($Mode < Median < Mean$). 
+* **Operational Implication:** The airline's daily schedule is heavily anchored by ultra-high-frequency, short-distance regional commutes (hence the low mode). However, a minor, spread-out cluster of long-haul transoceanic flights pulls the mathematical average significantly upward.
+
+---
+
+## ⚙️ Local Installation & Execution Steps
+
+This analysis was executed intentionally in a clean, local Python environment to optimize rendering and processing speeds without cloud-based dependency overhead.
+
+1. **Clone the Repository Workspace:**
+   ```bash
+   git clone [https://github.com/your-username/airline-descriptive-stats.git](https://github.com/your-username/airline-descriptive-stats.git)
+   cd airline-descriptive-stats
