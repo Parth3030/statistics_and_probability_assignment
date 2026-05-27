@@ -3,7 +3,7 @@
 An exploratory and mathematical data analysis project conducted in a local Python environment to apply probability theory to real-world operational data. By evaluating central tendencies, computing sample variance properties, and fitting continuous probability distributions (Normal Distribution), this project demonstrates how to translate raw data distributions into predictive, statistical models.
 
 ## 🚀 Key Deliverables
-* **Main Analysis Notebook:** `Statistics and Probability (1).ipynb`
+* **Main Analysis Notebook:** `Statistics and Probability.ipynb`
 * **Core Technical Stack:** Python 3, Pandas, NumPy, Matplotlib, SciPy (`scipy.stats`)
 * **Core Concepts:** Descriptive Statistics, Normal Distribution Fitting, Z-Score Calculations, Probability Density Functions (PDF)
 
