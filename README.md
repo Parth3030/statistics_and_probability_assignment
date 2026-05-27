@@ -1,42 +1,46 @@
-# Statistical Modeling & Probability Distribution Analysis
+# Airline Operational Analytics: Statistical Modeling & Probability Distributions
 
-An exploratory and mathematical data analysis project conducted in a local Python environment to apply probability theory to real-world operational data. By evaluating central tendencies, computing sample variance properties, and fitting continuous probability distributions (Normal Distribution), this project demonstrates how to translate raw data distributions into predictive, statistical models.
+An end-to-end mathematical data analysis project conducted in a local Python development environment to model airport operational metrics. By assessing baseline descriptive characteristics and fitting continuous theoretical curves (Normal Distribution), this project transforms empirical flight logs into active probability models to determine risk thresholds and structural flight profiles.
 
-## 🚀 Key Deliverables
-* **Main Analysis Notebook:** `Statistics and Probability.ipynb`
-* **Core Technical Stack:** Python 3, Pandas, NumPy, Matplotlib, SciPy (`scipy.stats`)
-* **Core Concepts:** Descriptive Statistics, Normal Distribution Fitting, Z-Score Calculations, Probability Density Functions (PDF)
-
----
-
-## 📊 Business & Analytical Context
-Understanding the probability distribution of organizational metrics (such as flight distances, delivery times, or transaction values) allows businesses to project risks, estimate capacity requirements, and calculate exact operational probabilities. 
-
-This project takes a continuous numerical feature (**Flight Distance**) and builds a statistical framework to analyze its spread, assess its behavior against a theoretical bell curve, and calculate precise interval probabilities.
+## 🚀 Repository Assets
+* **Core Workspace:** `Statistics and Probability (1).ipynb`
+* **Technical Framework:** Python 3, Pandas, NumPy, Matplotlib, SciPy (`scipy.stats`)
+* **Mathematical Applications:** Continuous Probability Density Functions (PDF), Parameter Estimation, Z-Score Intercepts, Right-Skewness Analysis
 
 ---
 
-## 🛠️ Technical Workflow & Implementation
+## 📊 Business Framework & Objective
+For logistical hubs and airline carriers, calculating the spatial behavior of flights is foundational to resource allocation, fuel planning, and fleet routing. 
 
-### 1. Statistical Baseline & Parameter Estimation
-Using `numpy` and `pandas`, the system extracts key parameters from the sample population to define our distribution:
-* **Mean ($\mu$):** Calculated as **~1190.32 miles**, establishing the balance point of the dataset.
-* **Standard Deviation ($\sigma$):** Calculated as **~997.45 miles**, showing a wide operational dispersion across short and long-haul categories.
-* **Standard Error (SEM):** Evaluated at **2.77**, indicating exceptionally high sample mean stability.
-
-### 2. Probability Density Function (PDF) Modeling
-* Built a theoretical **Normal Distribution Curve** using `scipy.stats.norm.pdf()` based on the estimated sample mean ($\mu$) and standard deviation ($\sigma$).
-* Overlaid the continuous probability curve onto an empirical frequency histogram using `matplotlib` to visually inspect skewness and deviation from standard normality.
-
-### 3. Z-Score & Interval Probability Calculations
-Using cumulative distribution functions (`scipy.stats.norm.cdf()`), the project calculates exact probabilities for operational thresholds:
-* **Left-Tail Probabilities:** Calculating the statistical likelihood of an event falling below a specific target value.
-* **Interval Probabilities:** Subtracting cumulative bounds to find the exact probability of an asset falling within a specific operational range.
+This project explores an enterprise database consisting of **24 performance columns** (including traveler categories, seating layout satisfaction, and downstream delay minutes). The core focus lies in extracting **Flight Distance** metrics to develop a rigorous mathematical baseline that calculates standard operational probabilities.
 
 ---
 
-## 💡 Key Analytical Insights
+## 🛠️ Workspace Pipeline & Math Implementation
 
-* **Distribution Shape and Skewness:** While the theoretical normal curve assumes perfect symmetry, comparing the empirical data histogram to the generated PDF reveals a classic right-skewed distribution. The standard median sits significantly lower than the statistical mean, indicating that regional, short-distance metrics dominate daily operations.
-* **Predictive Value of CDF:** By mapping data to a continuous distribution model, the business can rapidly calculate baseline probabilities for any arbitrary metric without needing to manually resample the entire database.
+### 1. Parametric Data Auditing
+Using `pandas`, raw consumer profiles are imported programmatically and checked. Central locations and dispersion limits are calculated directly from the core vector array:
+* **Mathematical Mean ($\mu$):** `1190.32` miles, pinpointing the global balancing point of flight records.
+* **Statistical Median:** `844.0` miles, capturing the exact 50th percentile mark.
+* **Sample Variance ($\sigma^2$):** `994,911.44` (indicating high dispersion across regional and long-haul vectors).
+* **Standard Deviation ($\sigma$):** `997.45` miles, tracking the average deviation around our operating mean.
+* **Standard Error (SEM):** `2.77`, proving high stability and low variance in our global population mean.
 
+### 2. Theoretical Continuous Distribution Fitting
+To determine if operations follow a standard bell shape, the system maps out an empirical frequency density histogram overlaid with a custom continuous **Normal Probability Density Function (PDF)** using `scipy.stats.norm.pdf()`:
+
+$$\mu = 1190.32, \quad \sigma = 997.45$$
+
+$$f(x) = \frac{1}{997.45\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - 1190.32}{997.45}\right)^2}$$
+
+### 3. Z-Score Framework
+By creating smooth continuous lines over real-world operational distributions, the workspace establishes a platform for calculating left-tail, right-tail, and step-wise interval probabilities:
+* **Z-Score Formula:** $Z = \frac{X - \mu}{\sigma}$
+* **Probability Metrics:** Solves cumulative area spaces under the fitted curve using the theoretical parameters.
+
+---
+
+## 💡 Core Insights & Skewness Findings
+
+* **The Right-Skewed Operational Profile:** The immense gap between the calculated Median (`844.0` miles) and Mean (`1190.32` miles) indicates a distinct right-skewed distribution. The carrier's daily flights are heavily packed with high-frequency, short-distance regional tracks, while an isolated tail of high-mileage intercontinental flights pulls the mathematical average higher.
+* **Friction Overlays:** By mapping continuous variables against discrete consumer response metrics, the pipeline tracks how physical properties (like long-range distances and late terminal delays) drive down base sentiment.
