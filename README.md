@@ -30,8 +30,8 @@ Using `numpy` and `pandas`, the system extracts key parameters from the sample p
 
 ### 3. Z-Score & Interval Probability Calculations
 Using cumulative distribution functions (`scipy.stats.norm.cdf()`), the project calculates exact probabilities for operational thresholds:
-* **Left-Tail Probabilities:** Calculating the statistical likelihood of an event falling below a specific target value ($P(X \le x)$).
-* **Interval Probabilities:** Subtracting cumulative bounds to find the exact probability of an asset falling within a specific operational range ($P(x_1 \le X \le x_2)$).
+* **Left-Tail Probabilities:** Calculating the statistical likelihood of an event falling below a specific target value.
+* **Interval Probabilities:** Subtracting cumulative bounds to find the exact probability of an asset falling within a specific operational range.
 
 ---
 
