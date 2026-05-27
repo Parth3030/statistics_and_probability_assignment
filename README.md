@@ -40,13 +40,3 @@ Using cumulative distribution functions (`scipy.stats.norm.cdf()`), the project 
 * **Distribution Shape and Skewness:** While the theoretical normal curve assumes perfect symmetry, comparing the empirical data histogram to the generated PDF reveals a classic right-skewed distribution. The standard median sits significantly lower than the statistical mean, indicating that regional, short-distance metrics dominate daily operations.
 * **Predictive Value of CDF:** By mapping data to a continuous distribution model, the business can rapidly calculate baseline probabilities for any arbitrary metric without needing to manually resample the entire database.
 
----
-
-## ⚙️ Local Environment Setup
-
-This project runs entirely on a clean, local Python environment using standard terminal execution.
-
-1. **Clone the Project Repository:**
-   ```bash
-   git clone [https://github.com/your-username/statistical-probability-modeling.git](https://github.com/your-username/statistical-probability-modeling.git)
-   cd statistical-probability-modeling
